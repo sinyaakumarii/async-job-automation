@@ -1,6 +1,6 @@
-# 🚀 Asynchronous AI Job Processor Portal
+# 🚀 Asynchronous AI Job Automation Portal
 
-A high-performance, production-grade asynchronous background task processing system built using **Node.js (Express)**, **Redis**, and **BullMQ**. It safely offloads heavy and slow LLM API calls (Google Gemini 3.5 Flash) to a queue-based background worker, ensuring instantaneous server responses (202 Accepted) and preventing server blocking or timeouts under heavy load.
+A high-performance, production-grade asynchronous background task automation system built using **Node.js (Express)**, **Redis**, and **BullMQ**. It safely offloads heavy and slow LLM API calls (Google Gemini 3.5 Flash) to a queue-based background worker, ensuring instantaneous server responses (202 Accepted) and preventing server blocking or timeouts under heavy load.
 
 ---
 
@@ -34,7 +34,7 @@ The entire workflow functions smoothly as follows:
 
 ## ✨ Features Implemented
 
-* **Asynchronous Execution:** No client-side thread blocking.
+* **Asynchronous Automation:** No client-side thread blocking.
 * **Modern Dashboard (Tailwind UI):** A fast, responsive, and gorgeous dark-themed dashboard built with Tailwind CSS and dynamic JavaScript polling.
 * **Strict Idempotency Guard:** Prevents duplicate expensive API requests by caching and locking processed `jobId` records.
 * **Exponential Backoff Retries:** Automatically retries failed API attempts (up to 3 times) with exponentially increasing delays (e.g., 2s, 4s, 8s) to handle rate-limiting.
